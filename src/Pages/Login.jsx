@@ -9,7 +9,7 @@ const Login = () => {
   });
 
   console.log(data);
-  //   const handleSubmit = (e) => {};
+
   return (
     <div className=" lg:flex lg:flex-row lg:w-sreen lg:h-screen">
       <div className="hidden lg:block lg:h-full lg:w-[50%]">
@@ -44,7 +44,7 @@ const Login = () => {
         />
         <AppButton
           label="submit"
-          className="bg-green-400 w-[100%] h-[60%] border-none active:bg-green-300 rounded-md text-white "
+          className="bg-blue-500 w-[100%] h-[60%] border-none active:bg-blue-300 rounded-md text-white "
         />
       </form>
     </div>
