@@ -32,7 +32,7 @@ const Login = () => {
           label="Name"
           type="text"
           placeholder="name"
-          className="w-[100%] h-[100%] rounded-md  outline-emerald-200  border-2 border-solid  text-center "
+          className="w-[100%] h-[100%] rounded-md  outline-blue-200  border-2 border-solid  text-center "
           require
         />
         <AppInput
@@ -40,7 +40,7 @@ const Login = () => {
           label="Password"
           type="password"
           placeholder="password"
-          className="w-[100%] h-[100%]  outline-emerald-200   rounded-md border-2 border-solid text-center"
+          className="w-[100%] h-[100%]  outline-blue-200   rounded-md border-2 border-solid text-center"
         />
         <AppButton
           label="submit"

@@ -22,7 +22,7 @@ const SignUp= () => {
         />
  
       </div>
-    <div className="  lg:h-screen lg:w-[50%] lg:flex lg:justify-center lg:items-center">
+    <div className=" lg:h-screen lg:w-[50%] lg:flex lg:justify-center lg:items-center">
     <form
         action=""
         className="flex flex-col justify-center items-center
@@ -35,7 +35,7 @@ const SignUp= () => {
           label="Fisrt Name"
           type="text"
           placeholder=" First Name"
-          className="w-[100%] h-[100%] rounded-md  outline-emerald-200  border-2 border-solid  text-center "
+          className="w-[100%] h-[100%] rounded-md  outline-blue-300  border-2 border-solid  text-center "
           require
         />
          <AppInput
@@ -43,7 +43,7 @@ const SignUp= () => {
           label="Last Name"
           type="text"
           placeholder="Last Name"
-          className="w-[100%] h-[100%] rounded-md  outline-emerald-200  border-2 border-solid  text-center "
+          className="w-[100%] h-[100%] rounded-md  outline-blue-300  border-2 border-solid  text-center "
           require
         />
         <AppInput
@@ -51,7 +51,7 @@ const SignUp= () => {
           label="Email"
           type="email"
           placeholder="Email"
-          className="w-[100%] h-[100%] rounded-md  outline-emerald-200  border-2 border-solid  text-center "
+          className="w-[100%] h-[100%] rounded-md  outline-blue-300  border-2 border-solid  text-center "
           require
         />
         <AppInput
