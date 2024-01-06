@@ -3,17 +3,18 @@ import { Example } from "../Components/example";
 import Home from "../Components/Home";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
-import NavigationBar from "../Components/NavigationBar";
+// import NavigationBar from "../Components/NavigationBar";
 import PageNotFound from "../Pages/PageNotFound";
-
+import Navbar from "../Components/Navbar/Navbar";
 const Router = () => {
   return (
     <BrowserRouter className="browser" >
-       <NavigationBar/>
-       
+       {/* <NavigationBar/> */}
+       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
+        
         <Route path="login" element={<Login />} />
         <Route path="signUp" element={<SignUp />} />
         {/* <Route path="sidebar" element={<SideBar />} /> */}
