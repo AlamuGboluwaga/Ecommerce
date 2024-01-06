@@ -1,28 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const menuList = ["shop", "men", "women", "kids"];
+  const [menu, setMenu] = useState('shop')
   return (
-    <div className=" flex justify-around p-4 shadow-md">
+    <div className=" flex justify-around p-2 shadow-md">
       <div className="flex items-center gap-10 ">
         <img src={logo} alt="nav-logo" />
-        <p className="text-[#171717] text-[38px] font-[600]">Shopper</p>
+        <p className="text-[#171717] text-[28px] font-normal">Shopper</p>
       </div>
       <ul className=" flex items-center gap-[50px] text-[#626262] text-[20px] font-[500]">
         {menuList.map((list, index) => (
-          <Link to={list}><li key={index}>{list[0].toLocaleUpperCase().concat(list.slice(1))}</li></Link>
+          <Link to={list}>
+            <li
+              key={index}
+              className="flex flex-col justify-center items-center "
+              onClick={() => {
+                setMenu(list);
+              }}
+            >
+              {list[0].toLocaleUpperCase().concat(list.slice(1))}
+              {menu === list ? (
+                <hr className=" w-[80%] h-[3px] outline-none rounded-[10px] bg-[#FF4141]" />
+              ) : (
+                <></>
+              )}
+            </li>
+          </Link>
         ))}
       </ul>
-      <div className="">
-        <button>Login</button>
+      <div className="flex flex-row items-center gap-[45px]">
+        <button className="w-[90px] h-[40px] outline-none  border-[#7a7a7a] border-[solid] border-[1px] text-#515151 text-[15px] font-normal bg-white rounded-[75px] active:bg-[#f3f3f3] ">
+          Login
+        </button>
         <img src={cart_icon} alt="cart_icon" />
+        <div className="w-[22px] h-[22px] flex  justify-center items-center mt-[-35px] ml-[-55px] rounded-[11px] bg-red-500 text-white ">
+          0
+        </div>
       </div>
     </div>
   );
 };
 
 export default Navbar;
-
-
