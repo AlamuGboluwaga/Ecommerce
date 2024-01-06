@@ -37,7 +37,7 @@ const Navbar = () => {
         </button>
         <img src={cart_icon} alt="cart_icon" />
         <div className="w-[22px] h-[22px] flex  justify-center items-center mt-[-35px] ml-[-55px] rounded-[11px] bg-red-500 text-white ">
-          0
+        <p>0</p>
         </div>
       </div>
     </div>
