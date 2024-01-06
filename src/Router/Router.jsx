@@ -5,7 +5,7 @@ import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
 import NavigationBar from "../Components/NavigationBar";
 import PageNotFound from "../Pages/PageNotFound";
-import SideBar from "../Pages/SideBar";
+
 const Router = () => {
   return (
     <BrowserRouter className="browser" >
