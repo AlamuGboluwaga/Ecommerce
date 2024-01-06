@@ -32,12 +32,14 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="flex flex-row items-center gap-[45px]">
-        <button className="w-[90px] h-[40px] outline-none  border-[#7a7a7a] border-[solid] border-[1px] text-#515151 text-[15px] font-normal bg-white rounded-[75px] active:bg-[#f3f3f3] ">
-          Login
-        </button>
+        <Link to={'/login'}>
+          <button className="w-[90px] h-[40px] outline-none  border-[#7a7a7a] border-[solid] border-[1px] text-#515151 text-[15px] font-normal bg-white rounded-[75px] active:bg-[#f3f3f3] ">
+            Login
+          </button>
+        </Link>
         <img src={cart_icon} alt="cart_icon" />
         <div className="w-[22px] h-[22px] flex  justify-center items-center mt-[-35px] ml-[-55px] rounded-[11px] bg-red-500 text-white ">
-        <p>0</p>
+          <p>0</p>
         </div>
       </div>
     </div>
