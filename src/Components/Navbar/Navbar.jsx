@@ -13,9 +13,8 @@ const Navbar = () => {
       </div>
       <ul className=" flex items-center gap-[50px] text-[#626262] text-[20px] font-[500]">
         {menuList.map((list, index) => (
-          <Link to={list}>
+          <Link to={list} key={index}>
             <li
-              key={index}
               className="flex flex-col justify-center items-center "
               onClick={() => {
                 setMenu(list);
@@ -32,7 +31,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="flex flex-row items-center gap-[45px]">
-        <Link to={'/login'}>
+        <Link to={"/login"}>
           <button className="w-[90px] h-[40px] outline-none  border-[#7a7a7a] border-[solid] border-[1px] text-#515151 text-[15px] font-normal bg-white rounded-[75px] active:bg-[#f3f3f3] ">
             Login
           </button>
