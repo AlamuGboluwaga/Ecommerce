@@ -22,9 +22,9 @@ const Router = () => {
         <Route path="/men" element={<ShopCategory category="men" />} />
         <Route path="/women" element={<ShopCategory category="women" />} />
         <Route path="/kids" element={<ShopCategory category="kids" />} />
-        <Route path="*" element={<Navigate to="/notfound" />} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/notfound" element={<PageNotFound />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Navigate to="notfound"/>} />
+        <Route path="notfound" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

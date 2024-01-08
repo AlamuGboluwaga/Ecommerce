@@ -36,7 +36,9 @@ const Navbar = () => {
             Login
           </button>
         </Link>
-        <img src={cart_icon} alt="cart_icon" />
+        <Link to="/cart">
+          <img src={cart_icon} alt="cart_icon" />
+        </Link>
         <div className="w-[22px] h-[22px] flex  justify-center items-center mt-[-35px] ml-[-55px] rounded-[11px] bg-red-500 text-white ">
           <p>0</p>
         </div>
