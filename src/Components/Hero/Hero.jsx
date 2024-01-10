@@ -2,6 +2,7 @@ import React from "react";
 import hand_icon from "../Assets/hand_icon.png";
 import arrow_icon from "../Assets/arrow.png";
 import hero_image from "../Assets/hero_image.png";
+
 const Hero = () => {
   return (
     <div className="h-screen bg-gradient-to-t from-purple-100 to-purple-200 via-purple-200 flex">

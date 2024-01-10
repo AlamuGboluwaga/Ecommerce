@@ -8,12 +8,14 @@ import Navbar from "../Components/Navbar/Navbar";
 import Product from "../Pages/Product";
 import Cart from '../Pages/Cart'
 import ShopCategory from "../Pages/ShopCategory";
+import Item from "../Components/Item/Item";
 const Router = () => {
   return (
     <BrowserRouter className="browser">
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
+        <Route path="/item" element={<Item/>} />
         <Route path="/home" element={<Home />} />
         <Route path="'login" element={<LoginSignup />} />
         <Route path="/product" element={<Product />} />
@@ -23,7 +25,7 @@ const Router = () => {
         <Route path="/women" element={<ShopCategory category="women" />} />
         <Route path="/kids" element={<ShopCategory category="kids" />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Navigate to="notfound"/>} />
+        <Route path="*" element={<Navigate to="notfound" />} />
         <Route path="notfound" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
