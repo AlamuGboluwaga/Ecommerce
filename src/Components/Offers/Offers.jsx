@@ -1,5 +1,5 @@
 import React from "react";
-import exclusive_image from "../Assets/exclussive-image.png";
+import exclusive_image from '../Assets/exclusive_image.png'
 const Offers = () => {
   return (
     <div className="w-[65%] h-[60vh] m-auto p-[0px 140px] mb-[150px] bg-gradient-to-r from-fde1ff via-transparent to-e1ffea22 h-screen ">
