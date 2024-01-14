@@ -1,6 +1,6 @@
 import "./App.css";
 import Router from "./Router/Router";
-import './styles/tailwind.css'
+import "./styles/tailwind.css";
 
 function App() {
   return (
